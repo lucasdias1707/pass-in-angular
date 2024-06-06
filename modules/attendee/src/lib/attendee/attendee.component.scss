@@ -1,0 +1,9 @@
+input[type="checkbox"]{
+    font-family: sans-serif;
+    color: white;
+
+    &:checked::before {
+        content: "✔"; /* Símbolo de check */
+        font-size: 0.75rem; /* Tamanho do símbolo */
+    }
+  }

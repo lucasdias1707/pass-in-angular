@@ -1,1 +1,87 @@
-<p>attendee works!</p>
+<div class="max-w-[1216px] mx-auto py-5 flex flex-col gap-5">
+    <div class="flex items-center gap-5 py-2">
+        <img src="../../../../assets/nlw-unite-icon.svg">
+        <nav class="flex items-center gap-5">
+            <a
+                href="/eventos"
+                class="font-medium text-sm hover:text-white text-gray-300"
+            >
+                Eventos
+            </a>
+            <a
+                href="/participantes"
+                class="font-medium text-sm hover:text-white text-gray-300"
+            >
+                Participantes
+            </a>
+        </nav>
+        <a
+            class="ml-auto font-medium text-sm hover:text-white text-gray-300"
+            href="/login"
+        >
+            Logout
+        </a>
+    </div>
+
+    <div class="flex flex-col gap-4">
+        <div class="flex gap-3 items-center">
+            <div class="text-2xl font-bold">Participantes</div>
+            <div class="px-3 w-72 py-1.5 border border-white/10 rounded-lg text-sm flex items-center gap-3">
+                        <!--Aqui vai o icone de pesquisa-->
+                        <!-- <fa-icon class="size-4 text-orange-300" [icon]="faMagnifyingGlass"></fa-icon> -->
+                <input class="bg-transparent flex-1 outline-none h-auto border-0 p-0 text-sm ring-0 focus:ring-0" placeholder="Buscar participante...">
+            </div>
+        </div>
+        <div class="border border-white/10 rounded-lg">
+            <table class="w-full">
+                <thead>
+                    <tr class="border-b border-white/10">
+                    <th class="py-3 px-4 text-sm font-semibold text-left">
+                       <input type="checkbox" class="size-4 flex justify-center items-center appearance-none bg-black/20 border rounded-sm border-white/10 checked:bg-orange-400 checked:border-0"/>
+                    </th>  
+                    <th class="py-3 px-4 text-sm font-semibold text-left">Código</th> 
+                    <th class="py-3 px-4 text-sm font-semibold text-left">Participantes</th> 
+                    <th class="py-3 px-4 text-sm font-semibold text-left">Data de inscrição</th> 
+                    <th class="py-3 px-4 text-sm font-semibold text-left">Data do check-in</th> 
+                    <th style="width: 64" class="py-3 px-4 text-sm font-semibold text-left"></th> 
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-white/10 hover:bg-white/5">
+                    <td class="py-3 px-4 text-sn text-zinc-300">
+                        <input type="checkbox" class="size-4 flex justify-center items-center appearance-none bg-black/20 border rounded-sm border-white/10 checked:bg-orange-400 checked:border-0"/>
+                    </td>
+                    <td class="py-3 px-4 text-sn text-zinc-300">123456</td>
+                    <td class="py-3 px-4 text-sn text-zinc-300">
+                        <div class="flex flex-col gap-1">
+                            <span class="font-semibold text-white">
+                                Lucas Dias
+                            </span>
+                            <span type="email">email&#64;teste.com</span>
+                        </div>
+                    </td>
+                    <td class="py-3 px-4 text-sn text-zinc-300" >07/04/2024</td>
+                    <td class="py-3 px-4 text-sn text-zinc-300" ></td>
+                    <td>
+                    </td>
+                  </tr>  
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="py-3 px-4 text-sn text-zinc-300" [attr.colspan]="3">
+                            Mostrando 10 de 100 items
+                        </td>
+                        <td class="py-3 px-4 text-sn text-zinc-300 text-right" [attr.colspan]="3">
+                            <div class="inline-flex items-center gap-8">
+                                <span>
+                                    Página 1 de 2
+                                </span>
+                            <div class="flex gap-1.5">
+                            </div>
+                        </div>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+</div>
