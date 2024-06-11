@@ -1,21 +1,27 @@
 <div class="flex gap-4 justify-center items-center min-h-screen">
     <div>
-        <img
-            src="../../../assets/nlw-unite-icon.svg"
-            alt
-        >
-        <div class="grid justify-center text-2xl font-bold mb-4">Login</div>
+        <div class="grid justify-center text-2xl font-bold mb-4">
+            <img
+                src="/assets/attendee-128.png"
+                width="64"
+                height="64"
+            >
+            <span>Login</span>
+        </div>
         <input
-            type="text"
+            type="email"
             class="px-3 w-72 py-1.5 flex outline-none bg-gray-500/20 text-white border border-white/10 rounded-lg text-sm mb-3 focus:text-orange-300"
-            placeholder="Nome"
+            placeholder="E-mail"
         >
         <input
+            id="senha"
             type="password"
             class="px-3 w-72 py-1.5 flex outline-none bg-gray-500/20 text-white border border-white/10 rounded-lg text-sm mb-3 focus:text-orange-300"
             placeholder="Senha"
+            required
         >
         <button
+            id="login"
             onclick="window.location.href='/participantes'"
             class="px-3 w-72 py-1.5 bg-gray-500/40 text-white border border-white/10 outline-none rounded-lg text-sm focus:ring-0 focus:font-bold hover:font-bold hover:bg-gray-500/20 hover:text-orange-300 focus:bg-gray-500/20 focus:text-orange-300 mb-3"
         >
